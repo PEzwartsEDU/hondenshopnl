@@ -1,5 +1,5 @@
 <?php
-require_once 'php/db.php';
+require_once '../php/db.php';
 
 if (isset($_GET['category']) && !empty($_GET['category'])) {
     $category = $_GET['category'];
@@ -26,7 +26,7 @@ $producten = $stmt->fetchAll();
 </head>
 <body>
 
-<?php include 'php/header.php'; ?>
+<?php include '../php/header.php'; ?>
 
 <main class="page">
     <div class="page-inner">
@@ -63,7 +63,7 @@ $producten = $stmt->fetchAll();
     </div>
 </main>
 
-<?php include 'php/footer.php'; ?>
+<?php include '../php/footer.php'; ?>
 
 </body>
 </html>

@@ -1,12 +1,12 @@
 <?php
-require_once 'php/db.php';
+require_once '../php/db.php';
 
 <?php
-    include 'php/header.php';
+    include '../php/header.php';
 ?>
 
 <?php
-    include 'php/footer.php';
+    include '../php/footer.php';
 ?>
 
 </body>
