@@ -24,3 +24,4 @@ $stmt->execute();
 
 header("Location: admin_products.php");
 exit;
+?>
