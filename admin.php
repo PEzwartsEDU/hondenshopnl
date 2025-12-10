@@ -1,4 +1,4 @@
-
+<?php
 //require_once 'php/db.php';
 
 $name  = "Admin";
@@ -16,4 +16,4 @@ $stmt->bindParam(':password_hash', $hash);
 $stmt->execute();
 
 echo "Admin gebruiker aangemaakt.";
-
+?>

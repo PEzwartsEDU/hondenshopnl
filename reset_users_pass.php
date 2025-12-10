@@ -1,4 +1,4 @@
-<
+<?php
 // reset_users_passwords.php
 require_once 'php/db.php';
 
@@ -23,3 +23,4 @@ foreach ($users as $email => $plainPassword) {
 }
 
 echo "<br>Klaar. Verwijder nu dit bestand (reset_users_passwords.php).";
+?>
