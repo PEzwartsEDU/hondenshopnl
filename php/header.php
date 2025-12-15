@@ -8,38 +8,38 @@ if (session_status() === PHP_SESSION_NONE) {
     <div class="top-bar">
         <div class="logo">
             <span class="logo-main">HondenShop</span>
-            <span class="logo-sub">NL</span><a href="index.php"></a>
+            <span class="logo-sub">NL</span>
         </div>
 
-        <form class="search-form" action="#nog niet" method="get">
-            <input type="text" name="q" placeholder="Zoek naar voer, snacks, speelgoed, bedden...">
-            <button type="submit">Zoeken</button>
-        </form>
+            <form class="search-form">
+                <input type="text"placeholder="Zoek naar voer, snacks, speelgoed, bedden...">
+                <button type="submit">Zoeken</button>
+            </form>
 
         <div class="user-actions">
-    <?php if (!empty($_SESSION['user_id'])): ?>
+            <?php if (!empty($_SESSION['user_id'])): ?>
 
-        <span style="font-size:14px;">
-            Welkom, <?= htmlspecialchars($_SESSION['user_name']); ?>
-        </span>
+                <span style="font-size:14px;">
+                    Welkom, <?= htmlspecialchars($_SESSION['user_name']); ?>
+                </span>
 
-        <a class="link-login" href="/hondenshopnl/logout.php">Uitloggen</a>
+                <a class="link-login" href="/hondenshopnl/logout.php">Uitloggen</a>
 
-        <?php if (!empty($_SESSION['is_admin']) && $_SESSION['is_admin'] == 1): ?>
-            <a class="link-login" href="/hondenshopnl/pages/admin_products.php">Admin Paneel</a>
-        <?php endif; ?>
+                <?php if (!empty($_SESSION['is_admin']) && $_SESSION['is_admin'] == 1): ?>
+                    <a class="link-login" href="/hondenshopnl/pages/admin_products.php">Admin Paneel</a>
+                <?php endif; ?>
 
-    <?php else: ?>
+            <?php else: ?>
 
-        <a class="link-login" href="/hondenshopnl/login.php">Inloggen</a>
-        <a class="link-login" href="/hondenshopnl/register.php">Registreren</a>
+                <a class="link-login" href="/hondenshopnl/login.php">Inloggen</a>
+                <a class="link-login" href="/hondenshopnl/register.php">Registreren</a>
 
-    <?php endif; ?>
+            <?php endif; ?>
 
-    <a href="/hondenshopnl/winkelwagen.php" class="link-cart">
-        &#128722; Winkelwagen
-    </a>
-</div>
+            <a href="/hondenshopnl/winkelwagen.php" class="link-cart">
+                &#128722; Winkelwagen
+            </a>
+        </div>
 
     </div>
 
